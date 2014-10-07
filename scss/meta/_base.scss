@@ -18,6 +18,7 @@ textarea:active {
   width: 1100px;
   margin: 0 auto;
   @include clearfix();
+  position: relative;
 }
 
 .row{

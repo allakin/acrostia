@@ -100,6 +100,7 @@ textarea:active {
 .container {
   width: 1100px;
   margin: 0 auto;
+  position: relative;
 }
 .container:before, .container:after {
   content: " ";
@@ -235,7 +236,7 @@ textarea:active {
 .bx-wrapper .bx-loading {
   min-height: 50px;
   background: url(../img/bx_loader.gif) center center no-repeat #fff;
-  height: 100%;
+  height: 555px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -376,27 +377,84 @@ textarea:active {
   padding: 10px;
 }
 
-.main a {
+.main .menu-wrap {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+.main .menu-wrap a {
   text-decoration: none;
 }
-.main a h1 {
+.main .menu-wrap a h1 {
   font-size: 50px;
   font-family: "damion", sans-serif;
   margin-top: 26px;
-  color: #fff;
+  color: #74c7d5;
 }
-.main li {
+.main .menu-wrap li {
   float: left;
-  padding: 42px 26px 18px 26px;
+  margin-top: 30px;
 }
-.main li a {
+.main .menu-wrap li a {
   font-size: 16px;
   font-family: "regular", sans-serif;
-  color: #fff;
+  color: #74c7d5;
   text-decoration: none;
+  padding: 42px 10px 18px 10px;
 }
-.main li a:hover {
+.main .menu-wrap li a:hover {
   color: black;
   background: #74c7d5;
-  padding: 42px 10px 18px 10px;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+}
+.main .bx-slider-wrapper {
+  position: relative;
+}
+.main .bx-slider-wrapper .bx-wrapper {
+  width: 100%;
+}
+.main .bx-slider-wrapper .bx-wrapper .slider-text {
+  padding: 34px 67px;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.main .bx-slider-wrapper li {
+  max-height: 1920px;
+  overflow: hidden;
+  position: relative;
+}
+.main .bx-slider-wrapper img {
+  width: 100%;
+  height: 555px;
+}
+.main .bx-slider-wrapper .bx-next,
+.main .bx-slider-wrapper .bx-prev {
+  background: url("../img/sp-slider.png");
+  width: 33px;
+  height: 56px;
+  display: block;
+}
+.main .bx-slider-wrapper .bx-next {
+  background-position: -33px -56px;
+}
+.main .bx-slider-wrapper .bx-prev {
+  background-position: 0px 0px;
+}
+.main .bx-slider-wrapper #slider-prev,
+.main .bx-slider-wrapper #slider-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -28px;
+}
+.main .bx-slider-wrapper #slider-prev {
+  left: 40px;
+}
+.main .bx-slider-wrapper #slider-next {
+  right: 40px;
 }
