@@ -7,3 +7,29 @@
 @import "meta/base";
 @import "meta/jquery.bxslider";
 
+.main {
+  a {
+    text-decoration: none;
+    h1 {
+      font-size: 50px;
+      font-family: $damion;
+      margin-top: 26px;
+      color: $white;
+    }
+  }
+  li {
+    float: left;
+    padding: 42px 26px 18px 26px;
+    a {
+      font-size: 16px;
+      font-family: $regular;
+      color: $white;
+      text-decoration: none;
+      &:hover {
+        color: darken(#000, 20%);
+        background: #74c7d5;
+        padding: 42px 10px 18px 10px;
+      }
+    }
+  }
+}
