@@ -517,4 +517,122 @@ h2 {
 
 .who-we-are-wrapp {
   background: url("../img/bg-who-we-are.jpg");
+  padding-bottom: 112px;
+}
+.who-we-are-wrapp p {
+  font-size: 14px;
+  font-family: "regular", sans-serif;
+  color: #e5d1e3;
+  text-align: center;
+  margin-top: 17px;
+  line-height: 24px;
+}
+.who-we-are-wrapp .button {
+  font-size: 25px;
+  font-family: "black", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 38px;
+  background: #a1ca6c;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+  display: table;
+  margin: 32px auto 0px;
+  margin-top: 52px;
+}
+.who-we-are-wrapp .team-wrapper {
+  padding-top: 43px;
+  margin-top: 69px;
+  padding-bottom: 32px;
+  background: rgba(77, 63, 75, 0.5);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.who-we-are-wrapp .team-wrapper:hover .image-wrapper {
+  background-position: 0px -164px;
+}
+.who-we-are-wrapp .team-wrapper:hover {
+  background: rgba(77, 63, 75, 0.8);
+}
+.who-we-are-wrapp .team-wrapper:hover h4 {
+  color: #fff;
+}
+.who-we-are-wrapp .team-wrapper:hover p {
+  color: #d1766a;
+}
+.who-we-are-wrapp .team-wrapper:hover .ico-facebook {
+  background-position: 0px -30px;
+}
+.who-we-are-wrapp .team-wrapper:hover .ico-twitter {
+  background-position: -31px -30px;
+}
+.who-we-are-wrapp .team-wrapper:hover .ico-google {
+  background-position: -62px -30px;
+}
+.who-we-are-wrapp .team-wrapper:hover .ico-in {
+  background-position: -93px -30px;
+}
+.who-we-are-wrapp .team-wrapper .image-wrapper {
+  margin: 0px auto;
+  width: 164px;
+  height: 164px;
+  background: url("../img/sp-icon-team.png") no-repeat 0px 0px;
+}
+.who-we-are-wrapp .team-wrapper h4 {
+  font-size: 25px;
+  font-family: "black", sans-serif;
+  color: #c7b6c5;
+  text-align: center;
+  text-height: 58px;
+  text-transform: uppercase;
+  margin-top: 26px;
+}
+.who-we-are-wrapp .team-wrapper p {
+  font-size: 14px;
+  font-family: "regular", sans-serif;
+  color: #a1ca6c;
+  text-align: center;
+  margin-top: 6px;
+}
+.who-we-are-wrapp .team-wrapper ul {
+  display: table;
+  margin: 32px auto 0px;
+}
+.who-we-are-wrapp .team-wrapper ul:before, .who-we-are-wrapp .team-wrapper ul:after {
+  content: " ";
+  display: table;
+}
+.who-we-are-wrapp .team-wrapper ul:after {
+  clear: both;
+}
+.who-we-are-wrapp .team-wrapper ul li {
+  float: left;
+  margin-right: 19px;
+}
+.who-we-are-wrapp .team-wrapper ul li:last-child {
+  margin-right: 0px;
+}
+.who-we-are-wrapp .team-wrapper .ico-facebook,
+.who-we-are-wrapp .team-wrapper .ico-twitter,
+.who-we-are-wrapp .team-wrapper .ico-google,
+.who-we-are-wrapp .team-wrapper .ico-in {
+  background: url("../img/sp-net-works.png");
+  width: 31px;
+  height: 30px;
+  display: block;
+}
+.who-we-are-wrapp .team-wrapper .ico-facebook {
+  background-position: 0px 0px;
+}
+.who-we-are-wrapp .team-wrapper .ico-twitter {
+  background-position: -31px 0px;
+}
+.who-we-are-wrapp .team-wrapper .ico-google {
+  background-position: -62px 0px;
+}
+.who-we-are-wrapp .team-wrapper .ico-in {
+  background-position: -93px 0px;
 }
