@@ -81,15 +81,6 @@
 }
 .our-services-wrapp{
   background: url("../img/bg-our-services.jpg");
-  h2{
-    font-size: 60px;
-    font-family: $light;
-    color: $white;
-    line-height: 58px;
-    text-align: center;
-    margin-top: 118px;
-    text-transform: uppercase;
-  }
   h3{
     font-size: 20px;
     font-family: $light;
@@ -114,11 +105,21 @@
     background: #c45158;
     margin-top: 114px;
     width: 103%;
+    margin-bottom: 124px;
     @include border-radius(4px);
     img{
       margin: 44px 50px 0px 59px;
       width: 140px;
       height: 140px;
+    }
+    h4{
+      font-size: 30px;
+      font-family: $light;
+      line-height: 58px;
+      color: $white;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 10px;
     }
     p{
       font-size: 14px;
@@ -129,4 +130,7 @@
       line-height: 20px;
     }
   }
+}
+.who-we-are-wrapp{
+  background: url("../img/bg-who-we-are.jpg");
 }

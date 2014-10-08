@@ -110,14 +110,14 @@ textarea:active {
   clear: both;
 }
 
-h4 {
-  font-size: 30px;
+h2 {
+  font-size: 60px;
   font-family: "light", sans-serif;
-  line-height: 58px;
   color: #fff;
-  text-transform: uppercase;
+  line-height: 58px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 118px;
+  text-transform: uppercase;
 }
 
 .row {
@@ -463,15 +463,6 @@ h4 {
 .our-services-wrapp {
   background: url("../img/bg-our-services.jpg");
 }
-.our-services-wrapp h2 {
-  font-size: 60px;
-  font-family: "light", sans-serif;
-  color: #fff;
-  line-height: 58px;
-  text-align: center;
-  margin-top: 118px;
-  text-transform: uppercase;
-}
 .our-services-wrapp h3 {
   font-size: 20px;
   font-family: "light", sans-serif;
@@ -496,6 +487,7 @@ h4 {
   background: #c45158;
   margin-top: 114px;
   width: 103%;
+  margin-bottom: 124px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -505,6 +497,15 @@ h4 {
   width: 140px;
   height: 140px;
 }
+.our-services-wrapp .row-wrapper h4 {
+  font-size: 30px;
+  font-family: "light", sans-serif;
+  line-height: 58px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+}
 .our-services-wrapp .row-wrapper p {
   font-size: 14px;
   font-family: "regular", sans-serif;
@@ -512,4 +513,8 @@ h4 {
   text-align: center;
   padding: 30px 26px 40px 26px;
   line-height: 20px;
+}
+
+.who-we-are-wrapp {
+  background: url("../img/bg-who-we-are.jpg");
 }
