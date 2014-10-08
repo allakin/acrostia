@@ -21,6 +21,16 @@ textarea:active {
   position: relative;
 }
 
+h4{
+  font-size: 30px;
+  font-family: $light;
+  line-height: 58px;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+}
+
 .row{
   @include clearfix();
   margin-left: -15px;
