@@ -23,13 +23,13 @@
     }
     li {
       float: left;
-      margin-top: 45px;
       a {
         font-size: 16px;
         font-family: $regular;
         color: $white;
         text-decoration: none;
         padding: 42px 28px 18px 28px;
+        display: block;
         &:hover {
           color: darken(#000, 20%);
           background: #74c7d5;
@@ -156,6 +156,19 @@
     display: table;
     margin: 32px auto 0px;
     margin-top: 52px;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: -15px;
+      left: 50%;
+      margin-left: -15px;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #a1ca6c;
+    }
   }
   .team-wrapper {
     padding-top: 43px;
@@ -270,67 +283,92 @@
     margin-left: 19px;
     margin-top: 41px;
   }
-  ul{
+  ul {
     @include clearfix();
   }
   li {
     float: left;
     margin: 41px -20px 0px 55px;
-    &:last-child{
+    font-size: 16px;
+    font-family: $regular;
+    color: $white;
+    text-decoration: none;
+    padding: 11px 10px;
+    &:hover {
+      background: #f5c149;
+      @include border-radius(4px);
+      cursor: pointer;
+    }
+    &:last-child {
       margin-right: 0px;
     }
-    a {
-      font-size: 16px;
-      font-family: $regular;
-      color: $white;
-      text-decoration: none;
-      padding: 11px 10px;
-      &:hover {
-        background: #f5c149;
-        @include border-radius(4px);
-      }
-    }
   }
-  .border-botton{
+  .border-botton {
     height: 1px;
     background: #94b963;
     width: 100%;
     margin-top: 38px;
   }
-  .portfolio{
+  .portfolio {
     margin-top: 47px;
-    position: relative;
-    &:hover .overlay{
+    .portfolio-img {
+      position: relative;
       display: block;
+      &:hover .overlay {
+        display: block;
+      }
     }
-    .overlay{
+    .overlay {
       display: none;
       position: absolute;
       background: rgba(61, 77, 41, 0.7);
       top: 0px;
-      left: 15px;
-      right: 15px;
-      bottom: 50px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
       @include border-radius(4px 4px 0px 0px);
-      .icon-zoom{
+      .icon-zoom {
         width: 50px;
         height: 50px;
-        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
       }
     }
-    img{
+    img {
       width: 100%;
       height: auto;
+      display: block;
     }
     p {
       font-size: 11px;
       font-family: $regular;
       color: #727272;
       text-transform: uppercase;
-      padding:13px 80px;
+      padding: 13px 80px;
       background: $white;
       @include border-radius(0px 0px 4px 4px);
-      margin-top: 3px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: '';
+        top: -15px;
+        left: 50%;
+        margin-left: -15px;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid $white;
+      }
     }
   }
+}
+
+#Container .mix {
+  display: none;
 }

@@ -17,4 +17,8 @@ $(document).ready(function(){
         //auto: true,
         prevText: ''
     });
+
+    $(function(){
+        $('#Container').mixItUp();
+    });
 });
