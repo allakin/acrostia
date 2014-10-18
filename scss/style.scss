@@ -351,7 +351,7 @@
       background: $white;
       @include border-radius(0px 0px 4px 4px);
       margin-top: 0px;
-      margin-bottom: 20px;
+      margin-bottom: 09px;
       position: relative;
       &:after {
         position: absolute;
@@ -371,4 +371,166 @@
 
 #Container .mix {
   display: none;
+}
+
+footer{
+  background: url("../img/bg-futer.jpg");
+  @include clearfix();
+}
+.text-contact{
+  font-size: 14px;
+  font-family: $regular;
+  color: $white;
+  margin-top: 17px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 122px;
+}
+.contact-info{
+  font-size: 30px;
+  color: $white;
+  font-family: $light;
+  margin-bottom: 27px;
+}
+span{
+  font-size: 20px;
+  font-family: $black;
+  color: #c0dfda;
+  margin-bottom: 10px;
+}
+.texts{
+  margin-bottom: 44px;
+  p{
+    font-size: 16px;
+    font-family: $regular;
+    color: $white;
+    margin-top: 10px;
+  }
+}
+.texts-info{
+  font-size: 16px;
+  font-family: $regular;
+  color: #c0dfda;
+  margin-bottom: 10px;
+  &:last-child{
+    margin-bottom: 0px;
+  }
+}
+p{
+  font-size: 16px;
+  font-family: $regular;
+  color: $white;
+  margin-top: 10px;
+}
+.map{
+  margin-top: 68px;
+}
+.forms{
+  input[type="text"],
+  input[type="email"]{
+    width: 48%;
+    float: left;
+    height: 40px;
+    background: #68a097;
+    border: none;
+    @include border-radius(4px);
+    text-indent: 19px;
+    color: #7bbdb3;
+    @include placeholder {
+      color: #7bbdb3;
+    }
+    &:hover{
+      background: $white;
+    }
+  }
+  input[type="text"]{
+    margin-right: 20px;
+  }
+  textarea {
+    margin-top: 20px;
+    background: #68a097;
+    color: #7bbdb3;
+    width: 100%;
+    height: 162px;
+    padding: 12px;
+    border: none;
+    @include border-radius(4px);
+    @include placeholder {
+      color: #7bbdb3;
+    }
+    &:hover{
+      background: $white;
+    }
+  }
+  button{
+    height: 50px;
+    border: 1px solid #df5c64;
+    border-radius: 4px;
+    background: #df5c64;
+    box-shadow: 0 4px 0 0 #c8535a ;
+    font-size: 26px;
+    font-family: $black;
+    text-transform: uppercase;
+    color: $white;
+    margin: 20px auto 75px;
+    display: table;
+    padding: 0px 97px;
+    &:hover{
+      background: #f05e66;
+      box-shadow: 0 4px 0 0 #dc565d;
+    }
+    &:active{
+      background: #f96068;
+      box-shadow: 0 4px 0 0 #e4565d;
+    }
+  }
+}
+.social-networks{
+  background: #68a097;
+  .footer-facebok,
+  .footer-twiter,
+  .footer-google,
+  .footer-in{
+    background: url("../img/sp-net-works-footer.png");
+    width: 60px;
+    height: 60px;
+    display: block;
+  }
+  .footer-facebok{
+    background-position: 0 0;
+    &:hover{
+      background-position: 0px -60px;
+    }
+  }
+  .footer-twiter{
+    background-position: -60px 0;
+    &:hover{
+      background-position: -60px -60px;
+    }
+  }
+  .footer-google{
+    background-position: -120px 0;
+    &:hover{
+      background-position: -120px -60px;
+    }
+  }
+  .footer-in{
+    background-position: -180px 0;
+    &:hover{
+      background-position: -180px -60px;
+    }
+  }
+  ul{
+    @include clearfix();
+    display: table;
+    margin: 0 auto;
+    padding: 40px 0px;
+    li{
+      float: left;
+      margin-right: 40px;
+      &:last-child{
+        margin-right: 0px;
+      }
+    }
+  }
 }
